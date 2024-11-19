@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function checkFname(){
+            var f=document.frm.fname.value;
+            if(f==""){
+                alert("Please Enter First Name");
+            }
+        }
+
+        function checkLname(){
+            alert("onchange called");
+        }
+
+        function checkEmail(){
+            alert(" onclick called");
+        }
+
+        function checkMobile(){
+            alert("ondlclick called ");
+        }
+
+        function checkAddress(){
+            alert(" address onfocus");
+        }
+
+        function checkPassword(){
+            alert("key pressed ");
+        }
+
+        function checkCpassword(){
+            alert("key released");
+        }
+
+        function checkGender(){
+            alert("mouse over gender");
+        }
+
+    </script>
+    <!-- f=document.frm.fname.value:- f means koie bhi name de diya first name ka
+     then,document matlab puri file . file ka name uske andar. jo first name ke name diya hai vo . plus uski 
+     value jo user dala ga -->
+</head>
+<body>
+    <form action="" method="post" name="frm">
+        <table cellpadding="3px" cellspacing="3px">
+
+        <tr>
+            <td> First Name </td>
+            <td> <input type="text" name="fname" onblur="checkFname()"></td>
+        </tr>
+<!-- jo name="fname" jo fname hai vo text box ka name hai to browser par hai ussme value put hogi and store -->
+        <tr>
+            <td> Last Name </td>
+            <td> <input type="text" name="lname" onchange="checkLname()"></td>
+        </tr>
+
+        <tr>
+            <td> Email </td>
+            <td> <input type="text" name="email" onclick="checkEmail()"></td>
+        </tr>
+
+        <tr>
+            <td> Mobile </td>
+            <td> <input type="text" name="mobile" ondblclick="checkMobile()"></td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><textarea rows="5" cols="21" name="address" onfocus="checkAddress()"></textarea></td>
+        </tr>
+
+        <tr>
+            <td> Gender </td>
+            <td> <input type="radio" name="gender" value="male" onmouseover="checkGender()">Male
+            <input type="radio" name="gender" value="female" onmouseover="checkGender()">Female
+        </td>
+        <!-- value is imp because when you select any one of them to jo select kiya hai uski value store hogi
+         and address first name and all we put value. -->
+        </tr> 
+
+        <tr>
+            <td>Hobby</td>
+            <td>
+                <input type="checkbox" name="hobby" value="music">Music <br> 
+            <input type="checkbox" name="hobby" value="travelling">Travelling <br> 
+            <input type="checkbox" name="hobby" value="reading">Reading <br> 
+            <input type="checkbox" name="hobby" value="cricket">Cricket <br> 
+        </td>
+        </tr>
+
+        <tr>
+            <td>Education</td>
+            <td>
+                <select name="education">
+                    <option>--Select education--</option>
+                    <option value="10th"> 10th</option>
+                    <option value="12th"> 12th</option>
+                    <option value="be"> BE</option>
+                    <option value="bca"> BCA </option>
+                    <option value="bba"> BBA</option>
+                    <option value="me"> ME</option>
+                    <option value="mca"> MCA </option>
+                </select>
+            </td>
+        </tr>  
+
+        <tr>
+            <td>Birth Date</td>
+            <td><input type="date" name="birth date"></td>
+        </tr>
+
+        <tr>
+            <td>Birth Time</td>
+            <td><input type="time" name="birth time"></td>
+        </tr>
+
+        <tr>
+            <td>Bio-Data</td>
+            <td><input type="file" name="bio-data"></td>
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" onkeypress="checkPassword()" ></td>
+        </tr>
+
+        <tr>
+            <td>Comfirm Password</td>
+            <td><input type="password" name=" confirm password" onkeyup="checkCpassword()"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="submit"></td>
+            <td><input type="button" value="CANCLE"></td>
+        </tr>
+
+        
+        </table>
+    </form>
+</body>
+</html>
