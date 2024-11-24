@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- datatypes:- two types:
+    
+    1:- primitive datatypes(single value)
+    2:- non-primitive datatype(you can work with multiple value) -->
+
+    <!-- 
+    1) primitve data:-
+    (mostly we use this;  its main )
+    - > string value
+    -> number value
+    -> undefined value
+    -> null value 
+    -> boolen value ( true or false)
+
+    (we dont use this two in js now )
+    -> Bigint (not use)
+    -> symoble(not use )
+
+    2)  non-primitive:-
+    -> array            they both cn store more than one values.
+    -> object -->
+
+    <script>
+        //number:-  use in phone number
+
+        var x = 20  //if we write float value eg; 2.5 it will still give you number as a datatype
+                    // because its a open sourse language so kaam less karvanu che its comman
+                    // in c language there is float double float ok
+        console.log(x)
+        console.log(typeof(x))  //we write typeof(x)  to check the datatype;
+
+
+        //string:-    use in email id where there is character number string
+//its is always in "" ok
+
+        let str = "aayush" //string also counts spaces in between its ok to use
+        let str1 = "hello world"
+        console.log(str)
+        console.log(typeof(str))
+        console.log(str1)
+        console.log(typeof(str1))
+
+
+
+        //undefined:-
+
+        var y
+        console.log(y)
+        console.log(typeof(y))
+
+
+        //null:-
+
+        let data = null  // we can also write " " in value yes its a string but there is no value so null.
+        console.log(data)
+        console.log(typeof(data)) // its and object because its a null value so in future you can add 2 value so it has put into non-primitive value
+
+
+
+        //bollean:-   use in condition statments its true or not
+
+        let data1 = true
+        console.log(data1)                  // tops 3 to use:- bollean,number,string are most imp ;;;; then also null 
+        console.log(typeof(data1))
+
+        let data2 = false
+        console.log(data2)                  
+        console.log(typeof(data2))  
+
+
+        //big data:
+
+        let ab = BigInt(554874538945418945348)
+        console.log(ab)  //last ma n lagai dese means infinity badha number store thai jaai n ma 
+        console.log(typeof(ab))
+
+
+        //symbol:-
+        let abc = Symbol("aayush@123")
+        console.log(abc)
+        console.log(typeof(abc))
+
+    </script>
+</body>
+</html>

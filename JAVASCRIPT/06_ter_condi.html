@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 30,b = 10
+        
+        let ab = (a<b) ? true : false
+        console.log(ab)
+
+        let ab1 = (a>b) ? true : false
+        console.log(ab1)
+
+        let ab2 = (a>b) ? a : b
+        console.log(ab2)
+
+        let ab3 = (a<b) ? a : b
+        console.log(ab3)
+
+
+
+
+//////////////////////////////////////////////////////
+// == means both value is same or not 
+// == only check values not datatypes:
+
+        let x = 10,y = 20
+
+        let abc = (a==b)? true : false
+        console.log(abc)
+
+        let d = 10,e = 10
+
+        let def = (d==e)? "true" : "false"
+        console.log(def)
+
+
+        // let f = 10 ,g = "10"
+        // let fgh = (f==g)? true:false
+        // console.log(fgh)
+
+
+
+// === will also check its datatypes and its value (both):-
+// it is more secure beacuse it checks both.
+//if we want to check only value then == ok
+        let f = 10 ,g = "10"
+        let fgh = (f === g) ? true:false      // it helps in password and confirm password 
+        console.log(fgh)
+
+    </script>
+</body>
+</html>
